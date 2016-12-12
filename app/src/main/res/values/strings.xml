@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">效率日志</string>
+    <string name="MessageCenter">消息</string>
+    <string name="LogCenter">日志</string>
+    <string name="WorkCenter">工作</string>
+    <string name="UserCenter">我</string>
+    <string name="default_user_name">张三</string>
+    <string name="default_phone">11011210086</string>
+    <string name="update_pass">修改密码</string>
+    <string name="update_phone">修改电话号码</string>
+    <string name="new_pass">新密码</string>
+    <string name="btn_txt">确认修改</string>
+    <string name="re_pass">确认新密码</string>
+    <string name="pass_tip">两次输入的密码不相同</string>
+    <string name="btn_phone">确认修改</string>
+    <string name="phone_edit">电话修改</string>
+    <string name="new_phone">请输入新的电话号码</string>
+    <array name="ItemEqual">
+        <item>A(最重要-自己做)</item>
+        <item>B(重要-压缩做)</item>
+        <item>C(次重要-授权别人做)</item>
+    </array>
+</resources>

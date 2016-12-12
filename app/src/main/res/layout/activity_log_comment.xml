@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/commentBackground"
+    tools:context="com.stk.ui.LogCommentActivity">
+
+            <RelativeLayout
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginStart="14dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/back"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:text="评论"
+                    android:textColor="@color/layoutBackground"
+                    android:textSize="20sp"/>
+            </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_below="@+id/top_view"
+                android:layout_above="@+id/commentText"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:background="@color/layoutBackground"
+                            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/default_img"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/default_img"
+                    android:layout_toRightOf="@+id/default_img"
+                    android:paddingTop="10dp"
+                    android:text="张三"/>
+                <TextView
+                    android:id="@+id/log_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/default_img"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@+id/default_img"
+                    android:paddingBottom="10dp"
+                    android:text="2016-04-01"
+                />
+                <TextView
+                    android:id="@+id/log_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="29dp"
+                    android:layout_marginRight="29dp"
+                    android:text="周计划"
+                    android:textSize="20sp"/>
+                <ImageView
+                    android:id="@+id/default_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="23dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    app:srcCompat="@drawable/user_default"/>
+            </RelativeLayout>
+
+            <com.stk.utils.LogListView
+                android:id="@+id/logListView"
+                android:background="@color/layoutBackground"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.stk.utils.LogListView>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:background="@color/layoutBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="回复"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <com.stk.utils.LogListView
+                android:layout_marginTop="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@color/layoutBackground"
+                android:id="@+id/commentListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+            </com.stk.utils.LogListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="评论"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

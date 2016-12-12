@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#53545a</color>
+    <color name="colorPrimaryDark">#38393E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="line">#bfbfbf</color>
+    <color name="layoutBackground">#ffffff</color>
+    <color name="commentBackground">#d9d9d9</color>
+    <color name="tabColor">#FDAB37</color>
+    <color name="tabTex">#AEAEAE</color>
+    <color name="black">#ffffff</color>
+    <color name="deep">#054CFF</color>
+    <color name="actionbar">#0C7BE4</color>
+    <color name="low">#2264F0</color>
+    <color name="gray">#808080</color>
+    <color name="wgray">#a7a7a7</color>
+    <color name="white">#ffffff</color>
+    <color name="blackk">#000000</color>
+    <color name="backgroundColor">#EFEEF4</color>
+    <color name="editTextColor">#a5a5a5</color>
+    <color name="red">#ff0000</color>
+</resources>
