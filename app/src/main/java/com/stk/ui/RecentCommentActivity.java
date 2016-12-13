@@ -42,7 +42,7 @@ public class RecentCommentActivity extends AppCompatActivity implements View.OnC
         initView();
         QueryLog();
         //intent = getIntent();
-     /*   commentVoList = (List<CommentVo>)intent.getSerializableExtra("comment_list");
+        /*commentVoList = (List<CommentVo>)intent.getSerializableExtra("comment_list");
         commentList.setAdapter(new RecentCommentAdapter(commentVoList,this));*/
         commentList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -114,7 +114,6 @@ public class RecentCommentActivity extends AppCompatActivity implements View.OnC
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-
                     }
 
                     @Override
