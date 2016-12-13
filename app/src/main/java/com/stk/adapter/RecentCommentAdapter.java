@@ -13,7 +13,7 @@ import com.stk.model.CommentVo;
 import java.util.List;
 
 /**
- * Created by admin on 2016/12/10.
+ * Created by wangl on 2016/12/10.
  */
 
 public class RecentCommentAdapter extends BaseAdapter {
